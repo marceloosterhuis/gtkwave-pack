@@ -4,6 +4,8 @@ The script packs the result of meson build on MSYS2 on Windows of the latest gtk
 
 https://github.com/gtkwave/gtkwave
 
+![Msys2 Windows icon](assets/images/msys2.png)
+
 build.txt:
 ```
 pacman -Syuu
