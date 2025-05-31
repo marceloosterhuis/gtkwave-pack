@@ -6,6 +6,8 @@ https://github.com/gtkwave/gtkwave
 
 ![Msys2 Windows icon](assets/images/msys2.png)
 
+https://www.msys2.org
+
 build.txt:
 ```
 pacman -Syuu
