@@ -1,23 +1,16 @@
 # gtkwave-pack
 
-The script (build_gtkwave_pkg.sh) packs the result of meson build on MSYS2 on Windows of the latest gtkwave sources from github. The script puts all the necessary dlls and executables into a zip archive and add a launcher script to start the executable (by setting correct paths first). When distributed, the archive can be unpacked on a windows system and launch.bat can be double clicked to start the waveform viewer.
+The script (**build_gtkwave_pkg.sh**) packs the result of meson build on MSYS2 on Windows of the latest gtkwave sources from https://github.com/gtkwave/gtkwave. The script puts all the necessary dlls and executables into a zip archive and add a launcher script to start the executable (by setting correct paths first). When distributed, the archive can be unpacked on a windows system and launch.bat can be double clicked to start the waveform viewer.
 
-https://github.com/gtkwave/gtkwave
+**Detailed instructions** (commands are also in build.txt):
 
-![Msys2 Windows icon](assets/images/msys2.png)
-
-https://www.msys2.org
+* install msys2 via https://www.msys2.org
+* open MSYS2-**MINGW64** terminal
+* execute pacman commands below in that terminal (first command should be executed twice.)
 
 ![MSYS2 versions](assets/images/msys2_versions.png)
 
-## MSYS2_MINGW64
-
-build.txt:
 ```
-install msys2 via link above
-open msys2-mingw64 terminal
-executed following pacman commands in that terminal (first command double)
-
 pacman -Syuu
 pacman -Syuu
 pacman -S mingw-w64-x86_64-gcc base-devel mingw-w64-x86_64-tk
@@ -39,3 +32,5 @@ git clone git@github.com:marceloosterhuis/gtkwave-pack.git
 cd gtkwave-pack
 ./build_gtkwave_pkg.sh
 ```
+
+info@oosterhuis.net
