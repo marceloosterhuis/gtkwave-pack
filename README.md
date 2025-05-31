@@ -8,6 +8,10 @@ https://github.com/gtkwave/gtkwave
 
 https://www.msys2.org
 
+![MSYS2 versions](assets/images/msys2_versions.png)
+
+## MSYS2_MINGW64
+
 build.txt:
 ```
 pacman -Syuu
