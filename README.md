@@ -1,6 +1,6 @@
 # gtkwave-pack
 
-The script (**build_gtkwave_pkg.sh**) packs the result of meson build on MSYS2 on Windows of the latest gtkwave sources from https://github.com/gtkwave/gtkwave. The script puts all the necessary dlls and executables into a zip archive and add a launcher script to start the executable (by setting correct paths first). When distributed, the archive can be unpacked on a windows system and launch.bat can be double clicked to start the waveform viewer.
+The script (**build_gtkwave_pkg.sh**) packs the result of **Meson** build on **MSYS2** on Windows of the latest gtkwave sources from https://github.com/gtkwave/gtkwave. The script puts all the necessary dlls and executables into a zip archive and add a launcher script to start the executable (by setting correct paths first). When distributed, the archive can be unpacked on a windows system and launch.bat can be double clicked to start the waveform viewer.
 
 **Detailed instructions** (commands are also in build.txt):
 
