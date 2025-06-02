@@ -1,6 +1,8 @@
 # gtkwave-pack
 
-The script (**build_gtkwave_pkg.sh**) packs the result of **Meson** build on **MSYS2** on Windows of the latest gtkwave sources from https://github.com/gtkwave/gtkwave. The script puts all the necessary dlls and executables into a zip archive and add a **launcher** script to start the executable (by setting correct paths first). When distributed, the archive can be unpacked on a windows system and launch.bat can be double clicked to start the waveform viewer.
+The script (**build_gtkwave_pkg.sh**) packs the result of **Meson** build on **MSYS2** on Windows of the latest gtkwave sources from https://github.com/gtkwave/gtkwave. The script puts all the necessary dlls and executables into a zip archive and adds a **launcher script** to start the executable (by setting correct paths first). When distributed, the archive can be unpacked on a windows system and launch.bat can be double clicked to start the waveform viewer.
+* *Remark: Windows (11) seems to be able to find lib and share folders on its own (without launcher script). Initially I thought it was needed because of* https://github.com/YosysHQ/oss-cad-suite-build/blob/main/default/patches/environment.bat .
+*So one can also start the waveform viewer by just double clicking on the gktwave.exe.*
 
 **Detailed instructions** (commands are also in build.txt):
 
