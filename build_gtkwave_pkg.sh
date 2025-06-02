@@ -65,6 +65,7 @@ cp /mingw64/share/glib-2.0/schemas/gschemas.compiled "$tmpdir"/share/glib-2.0/sc
 
 mkdir -p "$tmpdir"/share/icons
 cp -R /mingw64/share/icons/Adwaita "$tmpdir"/share/icons
+cp ../gtkwave/share/io.github.gtkwave.GTKWave.svg "$tmpdir"/share/icons
 
 cat <<EOF > "$tmpdir"/launch.bat
 @echo off
