@@ -21,14 +21,14 @@ pacman -S mingw-w64-x86_64-gobject-introspection
 pacman -S mingw-w64-x86_64-desktop-file-utils
 
 cd git
-git clone https://github.com/gtkwave/gtkwave/ gtkwave
+git clone https://github.com/gtkwave/gtkwave.git
 cd gtkwave
 
 meson setup build --prefix=/opt
 meson compile -C build
 
 cd ..
-git clone git@github.com:marceloosterhuis/gtkwave-pack.git
+git clone https://github.com/marceloosterhuis/gtkwave-pack.git
 cd gtkwave-pack
 ./build_gtkwave_pkg.sh
 ```
